@@ -1,0 +1,336 @@
+/* ...existing code... */
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fa;
+  color: #222;
+}
+
+.main-header {
+  background: linear-gradient(90deg, #0f2027 0%, #2c5364 100%);
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+  box-shadow: 0 2px 8px rgba(44,83,100,0.08);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-right: 1.5rem;
+}
+
+.profile-info h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+}
+
+.profile-info a {
+  color: #ffd700;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.profile-info a:hover {
+  text-decoration: underline;
+}
+
+.address {
+  font-size: 0.95rem;
+  color: #c0c0c0;
+  margin-top: 0.5rem;
+}
+
+.main-nav {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(44,83,100,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #2c5364;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.7rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #0f2027;
+  border-bottom: 2px solid #0f2027;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #2c5364;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  .header-content, .profile-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .main-nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(44,83,100,0.04);
+    margin-top: 0.5rem;
+  }
+  .nav-links a {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* ...existing code... */
+
+/* ...existing code... */
+
+/* Section Container */
+main section.container {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(44,83,100,0.06);
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  max-width: 900px;
+  transition: box-shadow 0.2s;
+}
+
+main section.container:hover {
+  box-shadow: 0 4px 24px rgba(44,83,100,0.12);
+}
+
+/* Section Headings */
+main h2 {
+  font-size: 1.6rem;
+  color: #2c5364;
+  margin-bottom: 1.2rem;
+  border-left: 4px solid #ffd700;
+  padding-left: 0.7rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* Subheadings */
+main h3 {
+  font-size: 1.15rem;
+  color: #0f2027;
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+/* Lists */
+main ul, main ol {
+  margin: 0.5rem 0 1.5rem 1.2rem;
+  padding: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+main ul li, main ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Publications */
+#publications ol {
+  padding-left: 1.2rem;
+}
+
+#publications li {
+  margin-bottom: 1.2rem;
+}
+
+/* Technologies/Skills */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.5rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+#skills li {
+  background: #f7f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  color: #2c5364;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+/* Memberships & Honors */
+#membership ul {
+  list-style: disc inside;
+}
+
+/* Extra Curricular */
+#extracurricular ul {
+  list-style: disc inside;
+}
+
+/* References */
+#references ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#references li {
+  margin-bottom: 1.2rem;
+  background: #f7f9fa;
+  border-left: 4px solid #ffd700;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  main section.container {
+    padding: 1.2rem 0.7rem;
+    margin: 1.2rem 0.2rem;
+  }
+  main h2 {
+    font-size: 1.2rem;
+    padding-left: 0.4rem;
+  }
+  main h3 {
+    font-size: 1rem;
+  }
+  #skills ul {
+    gap: 0.5rem 0.7rem;
+  }
+}
+
+/* ...existing code... */
+
+/* ...existing code... */
+
+footer {
+  background: linear-gradient(90deg, #0f2027 0%, #2c5364 100%);
+  color: #fff;
+  padding: 1.2rem 0 1rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-left, .footer-center, .footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-center {
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.footer-center a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-center a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-divider {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .footer-left, .footer-center, .footer-right {
+    justify-content: center;
+  }
+}
+
+/* ...existing code... */

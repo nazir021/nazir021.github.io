@@ -2,47 +2,173 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nazir021 | Portfolio</title>
+  <title>Md Nazir Ahmed | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
-    .container { max-width: 700px; margin: 40px auto; background: #fff; padding: 30px 40px; border-radius: 8px; box-shadow: 0 4px 24px #ddd; }
-    h1 { color: #2a7ae2; }
-    h2 { color: #1d3557; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-    .project { margin-bottom: 20px; }
-    .project-title { margin: 0; font-size: 1.2em; color: #457b9d; }
-    .project-desc { margin: 5px 0 0 0; }
-    .contact { margin-top: 20px; }
-    a { color: #2a7ae2; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<!-- ...existing code... -->
 <body>
-  <div class="container">
-    <h1>Hello, I'm Nazir021!</h1>
-    <p>Welcome to my portfolio website. I'm passionate about web development and open source.</p>
-    <h2>About Me</h2>
-    <p><em>Write a short bio about yourself here. For example: "Software developer based in [Your City], focused on building impactful web applications and learning new technologies."</em></p>
+  <header class="main-header">
+    <div class="header-content container">
+      <div class="profile-info">
+        <img src="image/nas.jpeg" alt="Md Nazir Ahmed" class="profile-pic">
+        <div>
+          <h1>Md Nazir Ahmed</h1>
+          <p class="subtitle">Lecturer, Department of Computer Science & Engineering, IUBAT</p>
+          <p>
+            <a href="mailto:nazir.cse@iubat.edu">nazir dot cse at iubat dot edu</a> | 
+            Phone: +8801827-156573
+          </p>
+          <p>
+            <a href="https://github.com/nazir021" target="_blank">GitHub</a> | 
+            <a href="https://linkedin.com/in/nazir021" target="_blank">LinkedIn</a>
+          </p>
+          <p class="address">
+            Address: H#48, Ranavola Main Road, Turag, Dhaka, Bangladesh
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <h2>Projects</h2>
-    <div class="project">
-      <div class="project-title">Project One</div>
-      <div class="project-desc">Brief description of your project.</div>
-      <a href="https://github.com/nazir021/project-one" target="_blank">View on GitHub</a>
+  <nav class="main-nav">
+    <div class="container">
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <div class="nav-links">
+        <a href="#summary">Summary</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Technologies</a>
+        <a href="#membership">Membership</a>
+        <a href="#extracurricular">Extra</a>
+        <a href="#references">References</a>
+      </div>
     </div>
-    <div class="project">
-      <div class="project-title">Project Two</div>
-      <div class="project-desc">Another project description.</div>
-      <a href="https://github.com/nazir021/project-two" target="_blank">View on GitHub</a>
-    </div>
-    <!-- Add more projects here -->
+  </nav>
+<!-- ...existing code... -->
 
-    <h2>Contact</h2>
-    <div class="contact">
-      Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
-      <br>
-      GitHub: <a href="https://github.com/nazir021" target="_blank">nazir021</a>
+  <main>
+    <section id="summary" class="container">
+      <h2>Professional Summary</h2>
+      <p style="text-align: justify;">
+        Experienced in Computer Science and Engineering with four years of hands-on software development expertise in JavaScript and C#. I specialize in building scalable, maintainable applications and solving complex technical challenges through clean code and efficient architecture. My background in both academia and industry empowers me to merge theoretical rigor with practical implementation. I am committed to continuous learning, agile teamwork, and contributing to high-impact software projects aligned with modern development standards.
+      </p>
+    </section>
+
+    <section id="experience" class="container">
+      <h2>Work Experience</h2>
+      <h3>Lecturer, CSE</h3>
+      <p>IUBAT, Nov 2022 – Present (Full-Time)</p>
+      <ul>
+        <li>Teaching undergraduate courses in Computer Science & Engineering.</li>
+        <li>Course planning, mentoring, and academic advising.</li>
+      </ul>
+
+      <h3>Software Engineer</h3>
+      <p>Implevista BD, Oct 2022 – Present</p>
+      <ul>
+        <li>Supervised development of single/multi-vendor e-commerce SaaS platform (iv-commerce) with Next.js, Express, MongoDB.</li>
+        <li>Added features in Caretaskr App (Therapist Application).</li>
+        <li>Frontend: Angular, Material UI; Backend: .NET, SQL.</li>
+        <li>Microsoft Azure Service integration.</li>
+        <li>Developed a FinTech application for CCULB using Angular & .NET.</li>
+        <li>Responsible for optimized queries and stored procedures.</li>
+      </ul>
+
+      <h3>Junior Software Engineer</h3>
+      <p>Everexpert Info System, Oct 2020 – Sep 2022</p>
+      <ul>
+        <li>Developed multi-vendor e-commerce platform (React, Ant Design, Next.js, NestJS).</li>
+        <li>Implemented features for product, cart, and order management.</li>
+        <li>Collaborated in agile teams and participated in code reviews.</li>
+      </ul>
+    </section>
+
+    <section id="education" class="container">
+      <h2>Education</h2>
+      <ul>
+        <li><b>MSc in Computer Science & Engineering</b>, International University of Technology (IUT), 2023–Present</li>
+        <li><b>BSc in Computer Science & Engineering</b>, IUBAT, 2017–2021 (CGPA: 3.72)</li>
+        <li><b>HSC</b>, Ghatail Cantonment Public School and College, 2016 (GPA: 5.00)</li>
+        <li><b>SSC</b>, Ghatail Cantonment Public School and College, 2014 (GPA: 5.00)</li>
+      </ul>
+      <p><b>Undergrade Thesis:</b> Internet of Things(IoT) Based Vehicle Tracking System<br>
+      <b>Authors:</b> Md. Nazir Ahmed and Akibul Islam</p>
+    </section>
+
+    <section id="publications" class="container">
+      <h2>Publications</h2>
+      <ol>
+        <li>
+          <b>A Comparative Study of Machine Learning Models for Air Quality Index Classification in Urban Bangladesh</b><br>
+          Md Sakibur Rahman Pk, Md Nazir Ahmed, Umme Hanney Mukti, Nusrat Jahan Papia, Fahim Shakil Tamim, Dipta Mohon Das, Mahedi Hasan<br>
+          <i>2025 International Conference on Electrical, Computer and Communication Engineering (ECCE), 2025/2/13</i>
+        </li>
+        <li>
+          <b>Optimizing SMS Spam Detection with Large Language Models and Transformer Architectures</b><br>
+          Md Nazir Ahmed, ASM Shakil Ahamed, Fahim Shakil Tamim<br>
+          <i>2025 International Conference on Electrical, Computer and Communication Engineering (ECCE), 2025/2/13</i>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills" class="container">
+      <h2>Technologies</h2>
+      <ul>
+        <li>JavaScript, React JS, Next JS, Angular, Node JS, Nest JS</li>
+        <li>C#, MVC, ASP.NET, .NET Entity Framework</li>
+        <li>SQL, NO-SQL, SQL Management, MongoDB</li>
+        <li>Microservices, GitHub</li>
+      </ul>
+    </section>
+
+    <section id="membership" class="container">
+      <h2>Memberships & Honors</h2>
+      <ul>
+        <li>Member, THE INSTITUTION OF ENGINEERS, BANGLADESH (IEB). <a href="https://www.iebbd.org/member/search.jsp?searchToken=301181BAB9869B58343BFCC800313DA8&membershipId=M45853&memberNameEmailMobile=" target="_blank">Membership No. M-45853</a></li>
+      </ul>
+    </section>
+
+    <section id="extracurricular" class="container">
+      <h2>Extra Curricular Activities</h2>
+      <ul>
+        <li><b>Event Management:</b> Event Manager, IUBAT IT Society (2019–2020), managed media & publications and cultural activities.</li>
+        <li><b>Music:</b> Founder, Bangla Rock Band "GreeN HeartZ"; play piano & keyboard. <a href="https://www.youtube.com/@greenheartzofficial8950" target="_blank">YouTube Channel</a></li>
+      </ul>
+    </section>
+
+    <section id="references" class="container">
+      <h2>References</h2>
+      <ul>
+        <li>
+          <b>Prof Dr Utpal Kanti Das</b><br>
+          Chair, Department of CSE, IUBAT<br>
+          Phone: 01819199419<br>
+          Email: ukd@iubat.edu
+        </li>
+        <li>
+          <b>Md Moshfiqur Rahman Rony</b><br>
+          Senior Software Engineer, Worklife<br>
+          Phone: 01886 929392<br>
+          Email: 15203012@iubat.edu
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ...existing code... -->
+  <footer>
+    <div class="footer-content container">
+      <div class="footer-left">
+        &copy; 2025 Md Nazir Ahmed
+      </div>
+      <div class="footer-right">
+        Last updated: July 2025
+      </div>
     </div>
-  </div>
+  </footer>
+<!-- ...existing code... -->
 </body>
 </html>
